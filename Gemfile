@@ -47,5 +47,8 @@ group :development do
   gem 'devise', '~> 3.5', '>= 3.5.6'
   gem 'simple_form'
   gem "letter_opener", :group => :development
+  gem 'rmagick', '~> 2.15', '>= 2.15.4'
+  gem 'jquery-turbolinks'
+  gem 'carrierwave'
 end
 
