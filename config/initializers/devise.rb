@@ -266,4 +266,7 @@ Devise.setup do |config|
   config.authentication_keys = [ :login ]
   config.confirmation_keys = [:login]
    config.reset_password_keys = [:login]
+   
+   config.omniauth :facebook, "883507541759936", "53e9bca65f1c467717a12cd951faf232",
+                callback_url: "http://localhost:3000/users/auth/facebook/callback"
 end
