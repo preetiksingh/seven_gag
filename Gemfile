@@ -50,5 +50,6 @@ group :development do
   gem 'rmagick', '~> 2.15', '>= 2.15.4'
   gem 'jquery-turbolinks'
   gem 'carrierwave'
+  gem 'omniauth-facebook'
 end
 
