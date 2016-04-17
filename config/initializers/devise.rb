@@ -267,6 +267,8 @@ Devise.setup do |config|
   config.confirmation_keys = [:login]
    config.reset_password_keys = [:login]
    
-   config.omniauth :facebook, "883507541759936", "53e9bca65f1c467717a12cd951faf232",
+   config.omniauth :facebook, ENV["FACEBOOK_ID"], ENV["FACEBOOK_SECRET"],
                 callback_url: "http://localhost:3000/users/auth/facebook/callback"
+
+  config.omniauth :google_oauth2, ENV["GOOGLE_ID"], ENV["GOOGLE_SECRET"], name:'google'
 end

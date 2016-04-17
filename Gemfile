@@ -51,5 +51,7 @@ group :development do
   gem 'jquery-turbolinks'
   gem 'carrierwave'
   gem 'omniauth-facebook'
+  gem 'omniauth-google-oauth2'
+  gem 'dotenv-rails', :groups => [:development, :test]
 end
 
